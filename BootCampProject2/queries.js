@@ -6,7 +6,16 @@ var options =
 };
 
 var pgp = require('pg-promise')(options);
-var connectionString = 'postgres://localhost:5432/documents';
+var connectionString = {
+  database: "documents",
+  user: "node",
+  password: "node",
+  host: "192.168.112.2",
+  port: 5432,
+  max: 10,
+  idleTimeoutMillis: 30000
+}
+
 var db = pgp(connectionString);
 
 module.exports = 

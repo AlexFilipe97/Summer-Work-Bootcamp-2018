@@ -1,6 +1,3 @@
-DROP DATABASE IF EXISTS documents;
-CREATE DATABASE documents;
-
 \c documents;
 
 CREATE TABLE docs (
@@ -9,5 +6,7 @@ CREATE TABLE docs (
 	content VARCHAR
 );
 
-INSERT INTO docs (title, content)
-	VALUES('Vacation', 'It would be really good to go on a vacation');
+INSERT INTO docs (title, content) VALUES
+	('Vacation', 'It would be really good to go on a vacation'),
+	('Docker', 'Very usefull tool to have in your resume'),
+	('University','I have to stop playing FF14 soon TM');
