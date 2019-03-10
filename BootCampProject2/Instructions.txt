@@ -1,0 +1,28 @@
+To start the aplication:
+
+	npm start
+
+To retrieve all documents(in browser):
+
+	http://localhost:3000/api/documents
+
+To retrieve a specific document(in browser):
+
+	http://localhost:3000/api/documents/id
+	(each document has an id)
+
+To save a new document:
+
+	curl --data "title=YourTitle&content=YourText" \
+	
+	followed by:
+
+	http://127.0.0.1:3000/api/documents
+
+To edit a document:
+
+	curl -X PUT --data "title=YourTitle&content=YourContent" \
+
+	followed by:
+
+	http://127.0.0.1:3000/api/documents/id
